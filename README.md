@@ -1,6 +1,6 @@
-# Linux config
+# Linux
 
-my linux config and note
+My linux install and setting note
 
 Manjaro Linux: [Manjaro Official](https://manjaro.org)
 
