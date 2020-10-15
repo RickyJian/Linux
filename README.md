@@ -51,11 +51,14 @@ install linux basic package
 * [zsh](https://www.zsh.org/)
 
   * [oh-my-zsh](https://ohmyz.sh/)
-* theme: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
+
+    * [powerlevel10k](https://github.com/romkatv/powerlevel10k)
+
+      zsh theme
+
+  * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
     
-* [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-  
-* [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+  * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
 ## 4. Hardware
 
