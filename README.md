@@ -26,11 +26,21 @@ install linux basic package
 
   basic linux package
 
-* curl
+* [curl](https://curl.haxx.se/)
 
-* vim
+  curl is used in command lines or scripts to transfer data
 
-* git
+* [vim](https://www.vim.org/)
+
+  a highly configurable text editor
+
+* [git](https://git-scm.com/)
+
+  version control system
+
+* [neofetch](https://github.com/dylanaraps/neofetch) (optional)
+
+  a command-line system information tool
 
 ## 3. Terminal
 
@@ -56,31 +66,15 @@ install linux basic package
 * fusuma
 * Natural Scrolling
 
-### HiDPI
+### Display
 
 
 
-## Appearance
+### Chinese Input
 
 
 
+## 5. Appearance
 
 
-## Touchpad Gesture
-
-
-
-fusuma
-
-
-
-##  SDDM
-
-
-
-## HiDPI
-
-
-
-## Chinese Input
 
