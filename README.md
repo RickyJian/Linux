@@ -37,10 +37,50 @@ install linux basic package
 * [Tilix](https://gnunn1.github.io/tilix-web/)
   
   terminal
+
 * [zsh](https://www.zsh.org/)
-  
+
   * [oh-my-zsh](https://ohmyz.sh/)
-    * theme: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
-  * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-  * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+* theme: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
+    
+* [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+  
+* [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+
+## 4. Hardware
+
+
+
+### Touchpad Gesture
+
+* fusuma
+* Natural Scrolling
+
+### HiDPI
+
+
+
+## Appearance
+
+
+
+
+
+## Touchpad Gesture
+
+
+
+fusuma
+
+
+
+##  SDDM
+
+
+
+## HiDPI
+
+
+
+## Chinese Input
 
