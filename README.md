@@ -55,10 +55,71 @@ install linux basic package
     * [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
       zsh theme
-
+    
+      ```shell
+      # file: ~/.zshrc 
+      # custom terminal layout
+      
+      # zshrc theme
+      ZSH_THEME="powerlevel10k/powerlevel10k"
+      
+      # left elements
+      POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir dir_writable go_version vsc vi_mode)
+      
+      # right elements
+      POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status backgrond_jobs history time)
+      
+      # hide current user
+      DEFAULT_USER="ricky"
+      
+      # format history time
+      HIST_STAMPS="yyyy-mm-dd"
+      
+      ```
+  
+  * [nerd-fonts-complete](https://github.com/ryanoasis/nerd-fonts)
+    
+    
+    ```shell
+    # file: ~/.zshrc
+    
+    # show all icons
+    POWERLEVEL9K_MODE="nerdfont-complete"
+    ```
+    
   * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
     
+    ```shell
+    # file: ~/.zshrc
+    
+    # enable zsh-autosuggestions
+    source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+    ```
+    
   * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+  
+    ```shell
+    # file: ~/.zshrc
+    
+    # hight text style
+    ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="bold,underline"
+    
+    # enable zsh-syntax-highlighting
+    source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+    ```
+
+* bind local script
+
+  When you want to use shell script in everywhere by yourself, you should create `bin` directory and export it.
+
+  ```shell
+  # create local script directory
+  $ mkdir ~/bin
+  
+  # export bin path
+  # file: ~/.zshrc
+  export PATH=$PATH:~/bin
+  ```
 
 ## 4. Hardware
 
