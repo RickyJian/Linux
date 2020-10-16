@@ -10,9 +10,9 @@ Desktop Environment: [KDE Plasma 5](https://kde.org/plasma-desktop)
 
 install `Manjaro` and `KDE`
 
-Manjaro Link: [Download](https://manjaro.org/download/)
+Manjaro download page: [Download](https://manjaro.org/download/)
 
-Install [Preference](https://manjaro.org/support/firststeps/)
+Manjaro installation guide: [Link](https://manjaro.org/support/firststeps/)
 
 ## 2. Basic Package
 
