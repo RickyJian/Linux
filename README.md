@@ -1,6 +1,6 @@
 # Linux
 
-My linux install and setting note
+My linux installation guide and configuration
 
 Manjaro Linux: [Manjaro Official](https://manjaro.org)
 
