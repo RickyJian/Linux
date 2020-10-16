@@ -112,7 +112,7 @@ my zsh config refer to: [Link](.zshrc)
 
 * bind local script
 
-  When you want to use shell script in everywhere by yourself, you should create `bin` directory and export it.
+  when you want to use shell script in everywhere by yourself, you should create `bin` directory and export it.
 
   ```shell
   # create local script directory
