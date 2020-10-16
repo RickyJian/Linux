@@ -44,6 +44,8 @@ install linux basic package
 
 ## 3. Terminal
 
+my zsh config refer to: [Link](.zshrc)
+
 * [Tilix](https://gnunn1.github.io/tilix-web/)
   
   terminal
