@@ -125,7 +125,10 @@ my zsh config refer to: [Link](.zshrc)
 
 ## 4. Hardware
 
-my touchpad config refer to: [Natural Scrolling](30-touchpad.conf), [fusuma](config.yml)
+my touchpad config refer to: 
+
+* [Natural Scrolling](30-touchpad.conf)
+* [fusuma](config.yml)
 
 ### Touchpad Gesture
 
@@ -137,8 +140,6 @@ my touchpad config refer to: [Natural Scrolling](30-touchpad.conf), [fusuma](con
   # enable natural scrolling
   Option "Natural Scrolling" "true"
   ```
-
-  > xorg introduction: [Link](https://wiki.archlinux.org/index.php/Xorg)
 
 * [fusuma](https://github.com/iberianpig/fusuma)
 
@@ -168,13 +169,105 @@ my touchpad config refer to: [Natural Scrolling](30-touchpad.conf), [fusuma](con
       command: "xdotool keydown ctrl click 4 keyup ctrl" # Zoom in
     out:
       command: "xdotool keydown ctrl click 5 keyup ctrl" # Zoom out
-```
+  ```
   
   > xdotool intreduction: [Link](https://github.com/jordansissel/xdotool/blob/master/xdotool.pod)
 
 ### Display
 
+my displays shell scripts refer to:
 
+* [XSetup](Xsetup)
+* [auto-xrandr](auto-xrandr.sh)
+* [si-xrandr](si-xrandr.sh)
+* [ex-xrandr](ex-xrandr.sh)
+
+#### HiDPI Setting
+
+when your PC/NB shows low resolution or icons too small, use `xrandr` command to handle this problem.
+
+* [xorg-xrandr](https://wiki.archlinux.org/index.php/xrandr) 
+
+  an official configuration utility to the resize and rotate X Window System extension.
+
+* [SDDM](https://github.com/sddm/sddm/)
+
+  ```shell
+  # file: /usr/share/sddm/scripts/Xsetup
+  
+  # detected displays and adjust resolutions
+  primary=$(</sys/class/drm/card0/card0-eDP-1/status)
+  secondary=$(</sys/class/drm/card0/card0-DP-1/status)
+  connected=connected
+  
+  if [ "$primary" == "$connected" ] && [ "$secondary" == "$connected" ]; then
+         	 xrandr --output eDP1 --primary --mode 3200x1800 --pos 698x1890 --rotate normal --scale 1x1 --output DP1 --mode 1920x1080 --pos 618x0 --scale 1.75x1.75 --rotate normal --output DP2 --off --output VIRTUAL1 --off
+  elif [ "$primary" == "$connected" ]; then
+         	 xrandr --output eDP1 --primary --mode 3200x1800 --pos 698x1890 --rotate normal --scale 1x1 --output DP1 --off --output DP2 --off --output VIRTUAL1 --off
+  elif [ "$secondary" == "$connected" ]; then
+         	 xrandr --output eDP1 --off --output DP1 --primary --mode 1920x1080 --pos 618x0 --scale 1.75x1.75 --rotate normal --output DP2 --off --output VIRTUAL1 --off
+  fi
+  ```
+
+* displays detected
+
+  * auto-xrandr
+
+    ```shell
+    # file: ~/bin/auto-xrandr.sh
+    
+    # auto change primary, external, or both displays
+    primary=$(</sys/class/drm/card0/card0-eDP-1/status)
+    secondary=$(</sys/class/drm/card0/card0-DP-1/status)
+    connected=connected
+    
+    if [ "$primary" == "$connected" ] && [ "$secondary" == "$connected" ]; then
+           	 xrandr --output eDP1 --primary --mode 3200x1800 --pos 698x1890 --rotate normal --scale 1x1 --output DP1 --mode 1920x1080 --pos 618x0 --scale 1.75x1.75 --rotate normal --output DP2 --off --output VIRTUAL1 --off
+    	notify-send 'switch to multi displays'
+    elif [ "$primary" == "$connected" ]; then 
+           	 xrandr --output eDP1 --primary --mode 3200x1800 --pos 698x1890 --rotate normal --scale 1x1 --output DP1 --off --output DP2 --off --output VIRTUAL1 --off
+    	notify-send 'switch to primary display'
+    elif [ "$secondary" == "$connected" ]; then
+           	 xrandr --output eDP1 --off --output DP1 --primary --mode 1920x1080 --pos 618x0 --scale 1.75x1.75 --rotate normal --output DP2 --off --output VIRTUAL1 --off
+    	notify-send 'switch to external display'
+    fi
+    ```
+
+  * si-xrandr
+
+    ```shell
+    # file: ~/bin/si-xrandr.sh
+    
+    # change to primary display
+    primary=$(</sys/class/drm/card0/card0-eDP-1/status)
+    connected=connected
+    
+    if [ "$primary" == "$connected" ]; then 
+           	 xrandr --output eDP1 --primary --mode 3200x1800 --pos 698x1890 --rotate normal --scale 1x1 --output DP1 --off --output DP2 --off --output VIRTUAL1 --off
+    	notify-send 'switch to primary display'
+    fi
+    ```
+
+  * ex-xrandr
+
+    ```shell
+    # file: ~/bin/auto-xrandr.sh
+    
+    # change to external display
+    secondary=$(</sys/class/drm/card0/card0-DP-1/status)
+    connected=connected
+    
+    if [ "$secondary" == "$connected" ]; then
+           	 xrandr --output eDP1 --off --output DP1 --primary --mode 1920x1080 --pos 618x0 --scale 1.75x1.75 --rotate normal --output DP2 --off --output VIRTUAL1 --off
+    	notify-send 'switch to external display'
+    fi
+    ```
+
+> xorg introduction: [Link](https://wiki.archlinux.org/index.php/Xorg)
+
+#### Hot Plugin
+
+comming soon...
 
 ### Input Method
 
