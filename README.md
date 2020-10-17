@@ -136,9 +136,47 @@ my zsh config refer to: [Link](.zshrc)
 
 
 
-### Chinese Input
+### Input Method
 
+* [ibus](https://github.com/ibus/ibus/wiki)
 
+  input method framework
+
+* [ibus-chewing](https://github.com/definite/ibus-chewing)
+
+  chinese input method
+
+```shell
+# file: .xprofie
+export LANG="zh_TW.UTF-8"
+export XMODIFIERS="@im=ibus"
+export XMODIFIER="@im=ibus"
+export GTK_IM_MODULE="ibus"
+export QT_IM_MODULE="ibus"
+export DefaultIMModule="ibus"
+export XMODIFIERS="@im=ibus"
+export LC_CTYPE="zh_TW.UTF-8"
+# --replace: if there is an old ibus-daemon is running, it will be replaced.
+# --deamonize: run ibus as background process.
+# if you want to know other commands, can type ibus-deamon --help in your terminal
+ibus-daemon --replace --daemonize
+```
+
+> .xprofle introduction: [Link](https://wiki.archlinux.org/index.php/Xprofile)
+
+#### HiDPI Setting
+
+when your candidate panel will shows on the wrong position, you should add `--xim` after `ibus-daemon`
+
+solution refer to: [ibus issue#2221](https://github.com/ibus/ibus/issues/2221#issuecomment-708908247)
+
+```shell
+# file: .xprofie
+# --xim：execute ibus XIM server.
+ibus-daemon --xim --replace --daemonize
+```
+
+> X Input Method(xim) intrduction: [Link](https://en.wikipedia.org/wiki/X_Input_Method)
 
 ## 5. Appearance
 
