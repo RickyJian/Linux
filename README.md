@@ -81,7 +81,6 @@ my zsh config refer to: [Link](.zshrc)
   
   * [nerd-fonts-complete](https://github.com/ryanoasis/nerd-fonts)
     
-    
     ```shell
     # file: ~/.zshrc
     
@@ -118,8 +117,9 @@ my zsh config refer to: [Link](.zshrc)
   # create local script directory
   $ mkdir ~/bin
   
-  # export bin path
   # file: ~/.zshrc
+  
+  # export bin path
   export PATH=$PATH:~/bin
   ```
 
@@ -150,6 +150,8 @@ my ibus config refer to: [Link](.xprofile)
 
 ```shell
 # file: .xprofie
+
+# ibus setting
 export LANG="zh_TW.UTF-8"
 export XMODIFIERS="@im=ibus"
 export XMODIFIER="@im=ibus"
@@ -174,6 +176,7 @@ solution refer to: [ibus issue#2221](https://github.com/ibus/ibus/issues/2221#is
 
 ```shell
 # file: .xprofie
+
 # --xim：execute ibus XIM server.
 ibus-daemon --xim --replace --daemonize
 ```
