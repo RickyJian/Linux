@@ -125,12 +125,52 @@ my zsh config refer to: [Link](.zshrc)
 
 ## 4. Hardware
 
-
+my touchpad config refer to: [Natural Scrolling](30-touchpad.conf), [fusuma](config.yml)
 
 ### Touchpad Gesture
 
-* fusuma
 * Natural Scrolling
+
+  ```shell
+  # file: /etc/X11/xorg.conf.d/30-touchpad.conf
+  
+  # enable natural scrolling
+  Option "Natural Scrolling" "true"
+  ```
+
+  > xorg introduction: [Link](https://wiki.archlinux.org/index.php/Xorg)
+
+* [fusuma](https://github.com/iberianpig/fusuma)
+
+  fusuma is multitouch gesture recognizer.
+
+  ```yaml
+  # file: ~/.config/fusuma/config.yml
+  
+  # gesture config
+  swipe:
+    3:
+      left:
+        command: "xdotool key alt+Right" # History forward 
+      right:
+        command: "xdotool key alt+Left" # History back
+    4:
+      left:
+        command: "xdotool key ctrl+alt+Right" # Switch to next workspace
+      right:
+        command: "xdotool key ctrl+alt+Left" # Switch to previous workspace
+      up:
+        command: "xdotool key ctrl+F10" # Switch to next workspace
+      down:
+        command: "xdotool key ctrl+F12" # Switch to previous workspace
+  pinch:
+    in:
+      command: "xdotool keydown ctrl click 4 keyup ctrl" # Zoom in
+    out:
+      command: "xdotool keydown ctrl click 5 keyup ctrl" # Zoom out
+```
+  
+  > xdotool intreduction: [Link](https://github.com/jordansissel/xdotool/blob/master/xdotool.pod)
 
 ### Display
 
