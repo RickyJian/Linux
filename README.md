@@ -138,6 +138,8 @@ my zsh config refer to: [Link](.zshrc)
 
 ### Input Method
 
+my ibus config refer to: [Link](.xprofile)
+
 * [ibus](https://github.com/ibus/ibus/wiki)
 
   input method framework
