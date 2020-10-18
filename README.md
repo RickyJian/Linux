@@ -389,3 +389,35 @@ below settings in `System Setttings` > `Window Management` > `Task Switcher`
 
 * visualization: `Cover Switch`
 
+## Other Applications
+
+* folder management: [dolphin](https://web.archive.org/web/20110324033008/http://dolphin.kde.org/)
+
+* browser: [firefox-developer-edition](https://www.mozilla.org/en-US/firefox/developer/)
+
+* painter: [krita](https://krita.org/en/)
+
+  a professional FREE and open source painting program. It is made by artists that want to see affordable art tools for everyone.
+
+* image viewer: [nomacs](https://nomacs.org/)
+
+  a free, open source image viewer, which supports multiple platforms. You can use it for viewing all common image formats including RAW and psd images.
+
+* bittorrent downloader: [qbtorrent](https://www.qbittorrent.org/)
+
+* video player: [mpv](https://mpv.io/)
+
+  a free (as in freedom) media player for the command line. It supports a wide variety of media file formats, audio and video codecs, and subtitle types. 
+
+* pdf viewer: [okular](https://okular.kde.org/)
+
+* markdown editor: [typora](https://typora.io/)
+
+  Typora gives you a seamless experience as both a reader and a writer.
+
+* archives: [ark](https://utils.kde.org/projects/ark/)
+
+  a program for managing various archive formats within the KDE environment. 
+
+
+
