@@ -347,3 +347,45 @@ below settings under `System Setttings` > `Appearance`
 below settings under `System Setttings` > `Workspace` > `Startup and Shutdown` > `Login Screen`
 
 * Theme: `WhiteSur`
+
+## 6. Workspace & Windows Behavior
+
+### Desktop Effects
+
+below settings in `System Setttings` > `Workspace Behavior` > `Desktop Effects`
+
+* accessibility
+  * zoom
+* apperance
+  * background contrast
+  * blur
+  * desaturate unresponsive applications
+  * fading popups
+  * login
+  * logout
+  * maximize
+  * morphin popups
+  * screen edge
+  * sliding popups
+  * wobbly windows
+  * magic lamp
+* focus
+  * dialog parent
+  * slide back
+* show desktop animation
+  * window aperture
+* virtual desktop switching animation
+  * slide
+* window management
+  * desktop grid
+  * flip switch
+  * parent windows
+* window open/close animation
+  * fade
+
+### Window Management
+
+below settings in `System Setttings` > `Window Management` > `Task Switcher` 
+
+* visualization: `Cover Switch`
+
