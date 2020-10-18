@@ -342,6 +342,12 @@ below settings under `System Setttings` > `Appearance`
 
 * cursors: `Vimix Cursors`
 
+### Task Pannel
+
+* [Latte Dock](https://github.com/KDE/latte-dock)
+
+  a dock based on plasma frameworks that provides an elegant and intuitive experience for your tasks and plasmoids.
+
 ### SDDM
 
 below settings under `System Setttings` > `Workspace` > `Startup and Shutdown` > `Login Screen`
