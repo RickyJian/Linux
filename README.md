@@ -318,5 +318,32 @@ ibus-daemon --xim --replace --daemonize
 
 ## 5. Appearance
 
+### Application
 
+below settings under `System Setttings` > `Appearance`
 
+* global theme: `ChromeOS-dark`
+
+* plasma style: `ChromeOS`
+
+* application style: `Material-Original_Light`
+
+  should install `kde-gtk-config`
+
+* window decorations: `sweet-mars-transparent`
+
+* colors: `ChromeOSLight`
+
+* fonts: `jf open 粉圓 1.1`
+
+  Download [Link](https://justfont.com/huninn/)
+
+* icons: `Tela circle blue dark`
+
+* cursors: `Vimix Cursors`
+
+### SDDM
+
+below settings under `System Setttings` > `Workspace` > `Startup and Shutdown` > `Login Screen`
+
+* Theme: `WhiteSur`
