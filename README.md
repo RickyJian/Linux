@@ -348,6 +348,12 @@ below settings under `System Setttings` > `Appearance`
 
   a dock based on plasma frameworks that provides an elegant and intuitive experience for your tasks and plasmoids.
 
+### Virtual Desktop Bar
+
+* [virtual-desktop-bar](https://github.com/wsdfhjxc/virtual-desktop-bar)
+
+  displays virtual desktops as text labels (numbers, names, both) with indicators (various styles).
+
 ### SDDM
 
 below settings under `System Setttings` > `Workspace` > `Startup and Shutdown` > `Login Screen`
