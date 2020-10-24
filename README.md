@@ -58,7 +58,7 @@ my zsh config refer to: [Link](.zshrc)
 
       zsh theme
     
-      ```shell
+      ```
       # file: ~/.zshrc 
       # custom terminal layout
       
@@ -134,7 +134,7 @@ my touchpad config refer to:
 
 * Natural Scrolling
 
-  ```shell
+  ```
   # file: /etc/X11/xorg.conf.d/30-touchpad.conf
   
   # enable natural scrolling
@@ -292,7 +292,7 @@ my ibus config refer to: [Link](.xprofile)
 
   chinese input method
 
-```shell
+```
 # file: .xprofie
 
 # ibus setting
@@ -318,7 +318,7 @@ when your candidate panel will shows on the wrong position, you should add `--xi
 
 solution refer to: [ibus issue#2221](https://github.com/ibus/ibus/issues/2221#issuecomment-708908247)
 
-```shell
+```
 # file: .xprofie
 
 # --xim：execute ibus XIM server.
