@@ -318,11 +318,12 @@ when your candidate panel will shows on the wrong position, you should add `--xi
 
 solution refer to: [ibus issue#2221](https://github.com/ibus/ibus/issues/2221#issuecomment-708908247)
 
-```
-# file: .xprofie
+```shell
+# file: ~/bin/auto-input.sh
 
 # --xim：execute ibus XIM server.
-ibus-daemon --xim --replace --daemonize
+GDK_SCALE= GDK_DPI_SCALE= /usr/bin/ibus-daemon --xim --replace --daemonize
+notify-send 'ibus is starting'
 ```
 
 > X Input Method(xim) intrduction: [Link](https://en.wikipedia.org/wiki/X_Input_Method)
