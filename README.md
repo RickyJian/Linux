@@ -192,6 +192,8 @@ when your PC/NB shows low resolution or icons too small, use `xrandr` command to
 
 * [SDDM](https://github.com/sddm/sddm/)
 
+  display 
+
   ```shell
   # file: /usr/share/sddm/scripts/Xsetup
   
@@ -207,6 +209,15 @@ when your PC/NB shows low resolution or icons too small, use `xrandr` command to
   elif [ "$secondary" == "$connected" ]; then
          	 xrandr --output eDP1 --off --output DP1 --primary --mode 1920x1080 --pos 618x0 --scale 1.75x1.75 --rotate normal --output DP2 --off --output VIRTUAL1 --off
   fi
+  ```
+
+  cursor
+
+  ```
+  # file: /etc/enviroment
+  
+  # cursor size setting
+  XCURSOR_SIZE=48
   ```
 
 * displays detected
