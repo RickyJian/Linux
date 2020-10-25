@@ -127,8 +127,8 @@ my zsh config refer to: [Link](.zshrc)
 
 my touchpad config refer to: 
 
-* [Natural Scrolling](30-touchpad.conf)
-* [fusuma](config.yml)
+* [Natural Scrolling](configuration/30-touchpad.conf)
+* [fusuma](configuration/config.yml)
 
 ### Touchpad Gesture
 
@@ -177,10 +177,10 @@ my touchpad config refer to:
 
 my displays shell scripts refer to:
 
-* [XSetup](Xsetup)
-* [auto-xrandr](auto-xrandr.sh)
-* [si-xrandr](si-xrandr.sh)
-* [ex-xrandr](ex-xrandr.sh)
+* [XSetup](configuration/Xsetup)
+* [auto-xrandr](script/auto-xrandr.sh)
+* [si-xrandr](script/si-xrandr.sh)
+* [ex-xrandr](script/ex-xrandr.sh)
 
 #### HiDPI Setting
 
@@ -282,7 +282,7 @@ comming soon...
 
 ### Input Method
 
-my ibus config refer to: [Link](.xprofile)
+my ibus config refer to: [Link](configuration/.xprofile)
 
 * [ibus](https://github.com/ibus/ibus/wiki)
 
@@ -315,6 +315,8 @@ ibus-daemon --replace --daemonize
 #### HiDPI Setting
 
 when your candidate panel will shows on the wrong position, you should add `--xim` after `ibus-daemon`
+
+my input script refer to: [Link](script/auto-input.sh)
 
 solution refer to: [ibus issue#2221](https://github.com/ibus/ibus/issues/2221#issuecomment-708908247)
 
