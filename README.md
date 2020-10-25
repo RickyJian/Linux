@@ -278,7 +278,64 @@ when your PC/NB shows low resolution or icons too small, use `xrandr` command to
 
 #### Hot Plugin
 
-comming soon...
+when the external display connected/disconnected and according to your configuration 
+
+* install [autorandr](https://github.com/phillipberndt/autorandr)
+
+* save primary configuraton (disconnect external display)
+
+  ```shell
+  # file: ~/.config/autorandr/primary
+  
+  # save your primary configuration (disconnect external display)
+  $ autorandr --save primary
+  ```
+
+* bind primary script
+
+  ```shell
+  # file: ~/.config/autorandr/primary/preswitch
+  
+  # write your script and called it `preswitch`
+  primary=$(</sys/class/drm/card0/card0-eDP-1/status)
+  connected=connected
+  
+  if [ "$primary" == "$connected" ]; then 
+         	 xrandr --output eDP1 --primary --mode 3200x1800 --pos 698x1890 --rotate normal --scale 1x1 --output DP1 --off --output DP2 --off --output VIRTUAL1 --off
+  	notify-send 'switch to primary display'
+  fi
+  ```
+
+* save external configuration (connect external display)
+
+  ```shell
+  # file: ~/.config/autorandr/external
+  
+  # save your external configuration (connect external display)
+  $ autorandr --save external
+  ```
+
+* bind external script
+
+  ```shell
+  # file: ~/.config/autorandr/external/preswitch
+  
+  # write your script and called it `preswitch`
+  primary=$(</sys/class/drm/card0/card0-eDP-1/status)
+  secondary=$(</sys/class/drm/card0/card0-DP-1/status)
+  connected=connected
+  
+  if [ "$primary" == "$connected" ] && [ "$secondary" == "$connected" ]; then
+         	 xrandr --output eDP1 --primary --mode 3200x1800 --pos 698x1890 --rotate normal --scale 1x1 --output DP1 --mode 1920x1080 --pos 618x0 --scale 1.75x1.75 --rotate normal --output DP2 --off --output VIRTUAL1 --off
+  	notify-send 'switch to multi displays'
+  fi
+  ```
+
+* disable kscreen
+
+  `System Settings` > `Startup and Shutdown` > `Background Service`
+
+  unchecked and stop running `kscreen 2`
 
 ### Input Method
 
