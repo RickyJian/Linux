@@ -44,7 +44,7 @@ install linux basic package
 
 ## 3. Terminal
 
-my zsh config refer to: [Link](.zshrc)
+my zsh config refer to: [Link](configuration/.zshrc)
 
 * [Tilix](https://gnunn1.github.io/tilix-web/)
   
@@ -278,7 +278,7 @@ when your PC/NB shows low resolution or icons too small, use `xrandr` command to
 
 #### Hot Plugin
 
-when the external display connected/disconnected and according to your configuration 
+when you want to the external display connected/disconnected and according to your configuration 
 
 * install [autorandr](https://github.com/phillipberndt/autorandr)
 
